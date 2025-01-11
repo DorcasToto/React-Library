@@ -12,7 +12,7 @@ function App() {
             {book.title} ({book.year})
           </li>
         ))}
-      </ul>{" "}
+      </ul>
     </>
   );
 }
