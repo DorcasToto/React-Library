@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: react-library-deployment
+spec:
+  selector:
+    matchLabels:
+      app: react-library
+  template:
+    metadata:
+      labels:
+        app: react-library
+    spec:
+      containers:
+      - name: react-library-container
+        image: dorcasmosonik/react-library:v1.0.0
+        resources:
+          limits:
+            memory: "256Mi"
+            cpu: "500m"
+          requests:
+            memory: "128Mi"
+            cpu: "250m"
+        ports:
+        - containerPort: 80
