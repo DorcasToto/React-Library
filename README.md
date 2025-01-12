@@ -1,4 +1,3 @@
-
 # React Library Application
 
 This repository contains the code for the React Library Application. The app is containerized using Docker, deployed on Minikube, and has a CI/CD pipeline with GitHub Actions.
@@ -7,6 +6,10 @@ This repository contains the code for the React Library Application. The app is 
 
 ### Prerequisites:
 - Docker installed on your machine.
+- Kubernetes and Minikube installed.
+- `kubectl` command-line tool installed.
+- A GitHub account for accessing the repository.
+- Basic knowledge of containerization and Kubernetes concepts.
 
 ### Steps:
 1. Clone the repository:
@@ -32,7 +35,9 @@ This repository contains the code for the React Library Application. The app is 
 ## 2. Deploy on Minikube
 
 ### Prerequisites:
-- Install Minikube and kubectl.
+- Docker installed on your machine.
+- Kubernetes and Minikube installed.
+- `kubectl` command-line tool installed.
 
 ### Steps:
 1. Start Minikube:
@@ -66,5 +71,8 @@ This repository contains the code for the React Library Application. The app is 
 
 - **Assumptions**: Basic knowledge of Kubernetes, Docker, GitHub Actions.
 
+## Screenshot of Application Results
 
-
+[Docker Hub Screenshot](./dockerhub.png)  
+![Home Page Screenshot](./home.png)  
+![Minikube Run Screenshot](./minikuberun.png) 
